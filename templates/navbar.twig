@@ -19,7 +19,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#services">{{ 'Services'|trans }}</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -32,6 +32,17 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+                <li>
+                    {% if app.locale == 'es' %}
+                    <a href="/en">
+                        <img src="img/uk_17.png"></img>
+                    </a>
+                    {% else %}
+                    <a href="/es">
+                        <img src="img/spain_17.png"></img>
+                    </a>
+                    {% endif %}
                 </li>
             </ul>
         </div>

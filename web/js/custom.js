@@ -31,7 +31,7 @@ function showAddress(address) {
 
 $(document).ready(function(){
     // Video
-    var heightAvailable = ((window.innerHeight >= 640) ? window.innerHeight : 640) + 'px';
+    var heightAvailable = ((window.innerHeight >= 720) ? window.innerHeight : 720) + 'px';
     $('#videoPortada').css('height', heightAvailable);
     $('#videoPortada').videoBG({
     	mp4:'video/CorporateCloud.mp4',

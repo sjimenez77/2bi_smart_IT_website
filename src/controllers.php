@@ -12,18 +12,17 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 // -- PORTADA -----------------------------------------------------------------
-$app->get('/', function (Request $request) use ($app) {
-
+$app->get('/{_locale}', function (Request $request) use ($app) {
     return $app['twig']->render('content.twig', array());
 })
-->bind('portada');
+->bind('home');
 
-$app->get('/inicio', function() use ($app) {
-    return $app -> redirect($app['url_generator']->generate('portada'));
+$app->get('/', function (Request $request) use ($app) {
+    return $app->redirect($app['url_generator']->generate('home', array('_locale' => $app['locale'])));
 })
-->bind('inicio');
-// -----------------------------------------------------------------------------
+->bind('start');
 
+// -----------------------------------------------------------------------------
 $app->post('/contacto', function (Request $request) use ($app) {
 	// Obtenemos los datos del formulario
 	$nombre = $request->get('nombre');
@@ -34,7 +33,7 @@ $app->post('/contacto', function (Request $request) use ($app) {
 	$mensaje = $request->get('mensaje');
 	
 	// Construimos el cuerpo del mensaje
-	$body = "<h1>Agronegocios: ".$asunto."</h1><hr>";
+	$body = "<h1>2bi Smart IT: ".$asunto."</h1><hr>";
 	$body .= "Nombre: <strong>".$nombre."</strong><br>";
 	$body .= "Empresa: <strong>".$empresa."</strong><br>";
 	$body .= "Email: <strong>".$email."</strong><br>";

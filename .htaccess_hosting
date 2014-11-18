@@ -1,0 +1,12 @@
+Options -MultiViews
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index_dev.php [QSA,L]
+Redirect /img /web/img
+Redirect /css /web/css
+Redirect /js /web/js
+Redirect /fonts /web/fonts
+Redirect /font-awesome-4.1.0 /web/font-awesome-4.1.0
+Redirect /video /web/video

@@ -1,6 +1,7 @@
 <?php
 
 use Silex\Provider\MonologServiceProvider;
+use Symfony\Component\Translation\Loader\YamlFileLoader;
 
 // descomenta las siguientes líneas para activar la depuración
 // en el entorno de producción
@@ -12,10 +13,10 @@ $app->register(new MonologServiceProvider(), array(
 // Añadir a continuación cualquier otra opción de configuración de producción
 // **********************************************************************************
  
-// Título de la aplicación
+// App title
 $app['title'] = '2bi Smart IT';
 
-// Destinatario formulario de contacto: comercial@2bi.es
+// Contact email
 $app['default_contact'] = 'comercial@2bi.es';
 
 // Swiftmailer config
@@ -26,3 +27,11 @@ $app['swiftmailer.options'] = array(
     'encryption' => null,
     'auth_mode'  => 'login'
 );
+
+// Translator service config
+$app['translator'] = $app->share($app->extend('translator', function($translator, $app) {
+    $translator->addLoader('yaml', new YamlFileLoader());
+    $translator->addResource('yaml', __DIR__.'/locales/es.yml', 'es');
+    $translator->addResource('yaml', __DIR__.'/locales/en.yml', 'en');
+    return $translator;
+}));
