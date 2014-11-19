@@ -31,13 +31,13 @@ function showAddress(address) {
 
 $(document).ready(function(){
     // Video
-    var heightAvailable = ((window.innerHeight >= 720) ? window.innerHeight : 720) + 'px';
+    var heightAvailable = ((window.innerHeight >= 900) ? window.innerHeight : 900) + 'px';
     $('#videoPortada').css('height', heightAvailable);
     $('#videoPortada').videoBG({
-    	mp4:'video/CorporateCloud.mp4',
-    	ogv:'video/CorporateCloud.ogv',
-    	webm:'video/CorporateCloud.webm',
-    	poster:'video/CorporateCloud.jpg',
+    	mp4:'video/ThroughTheReeds.mp4',
+    	ogv:'video/ThroughTheReeds.ogv',
+    	webm:'video/ThroughTheReeds.webm',
+    	poster:'video/ThroughTheReeds.jpg',
     	scale:true,
     	loop:true,
     	height:heightAvailable,
@@ -48,12 +48,20 @@ $(document).ready(function(){
     initialize();
     showAddress('Paseo de las delicias 30, 28045, Madrid');
 
-    // Detectar resize y recargar para visualizar el contenido correctamente
-    $( window ).resize(function() {
-        setTimeout(function() {
-            if($(document.activeElement).attr('type') !== 'text') {
-                location.reload();
-            }
-        }, 1000);
+    // Orientation change event
+    window.addEventListener("orientationchange", function() {
+        location.reload();
+    });
+    
+    // Resize event
+    $(window).resize(function() {
+        if (!jQuery.browser.mobile)
+        {
+            setTimeout(function() {
+                if($(document.activeElement).attr('type') !== 'text') {
+                    location.reload();
+                }
+            }, 1000);
+        }
     });
 });

@@ -1,14 +1,27 @@
 # Navbar
 Services: 'Servicios'
-About us: 'Sobre nosotros'
+About us: 'Acerca de'
 Projects: 'Proyectos'
 Team:     'Equipo'
 Contact:  'Contacto'
 
 # Header
 Welcome To 2bi Smart IT!: '¡Bienvenido a 2bi Smart IT!'
-It's Nice To Meet You: 'Encantados De Conocerle'
+It's Nice To Meet You: 'Es un placer conocerle'
 Tell Me More: 'Cuéntame Más'
 
 # Services
 We provide the following services: 'Proporcionamos los siguientes servicios'
+
+# Contact
+Contact Us:   'Contacte Con Nosotros'
+Please fill the next contact form and we answer you as soon as possible: 'Por favor, rellene el siguiente formulario de contacto y le responderemos en la mayor brevedad posible'
+Your Email:   'Su Email'
+Your Name:    'Su Nombre'
+Your Phone:   'Su Teléfono'
+Your Message: 'Su Mensaje'
+Please enter your name: 'Por favor, introduzca su nombre'
+Please enter your email address: 'Por favor, introduzca su dirección de email'
+Please enter your phone number:  'Por favor, introduzca su número de teléfono'
+Please enter a message: 'Por favor, introduzca un mensaje'
+Send Message: 'Enviar Mensaje'

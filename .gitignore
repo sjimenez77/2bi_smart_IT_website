@@ -9,3 +9,6 @@ cache
 
 ### Dev config
 .htaccess
+
+### Video for header
+web/video/*
