@@ -30,9 +30,11 @@ function showAddress(address) {
 }
 
 $(document).ready(function(){
-    // Video
+    // Video height
     var heightAvailable = ((window.innerHeight >= 900) ? window.innerHeight : 900) + 'px';
     $('#videoPortada').css('height', heightAvailable);
+    
+    // Files for videoBG
     $('#videoPortada').videoBG({
     	mp4:'video/ThroughTheReeds.mp4',
     	ogv:'video/ThroughTheReeds.ogv',

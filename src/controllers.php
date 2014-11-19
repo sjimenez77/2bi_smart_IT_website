@@ -25,31 +25,28 @@ $app->get('/', function (Request $request) use ($app) {
 // -----------------------------------------------------------------------------
 $app->post('/contact', function (Request $request) use ($app) {
 	// Obtenemos los datos del formulario
-	$nombre = $request->get('nombre');
-	$empresa = $request->get('empresa');
+	$name = $request->get('name');
 	$email = $request->get('email');
-	$tel = $request->get('tel');
-	$asunto = $request->get('asunto');
-	$mensaje = $request->get('mensaje');
+	$phone = $request->get('phone');
+	$messageText = $request->get('message');
 	
 	// Construimos el cuerpo del mensaje
-	$body = "<h1>2bi Smart IT: ".$asunto."</h1><hr>";
-	$body .= "Nombre: <strong>".$nombre."</strong><br>";
-	$body .= "Empresa: <strong>".$empresa."</strong><br>";
+	$body = "<h1>Mensaje desde 2bi.es</h1><hr>";
+	$body .= "Nombre: <strong>".$name."</strong><br>";
 	$body .= "Email: <strong>".$email."</strong><br>";
-	$body .= "Teléfono: <strong>".$tel."</strong><hr>";
-	$body .= "".$mensaje;
+	$body .= "Teléfono: <strong>".$phone."</strong><hr>";
+	$body .= "".$messageText;
 
 	$message = \Swift_Message::newInstance()
 		->setContentType('text/html')
 		->setCharset('UTF-8')
-        ->setSubject($asunto)
-        ->setFrom(array('noreply@agrokaam.com'))
+        ->setSubject('Mensaje desde 2bi.es')
+        ->setFrom(array('noreply@2bi.es'))
         ->setTo($app['default_contact'])
         ->setBody($body);
 
-    $app['mailer']->send($message);
+    $result = $app['mailer']->send($message);
 
-    return $app -> redirect($app['url_generator']->generate('portada'));
+    return $app->json($result);
 })
 ->bind('contact');
