@@ -6,22 +6,81 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    <li>
+                        <a href="https://twitter.com/2biSmart"><i class="fa fa-twitter"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a>
+                    <li>
+                        <a href="#privacy" data-toggle="modal">{{ 'Privacy Policy'|trans }}</a>
                     </li>
-                    <li><a href="#">Terms of Use</a>
+                    <li>
+                        <a href="#terms" data-toggle="modal">{{ 'Terms of Use'|trans }}</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+
+<!-- Portfolio Modal 5 -->
+<div class="portfolio-modal modal fade" id="privacy" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>{{ 'Privacy Policy'|trans }}</h2>
+                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                        <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                        <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {{ 'Close'|trans }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 5 -->
+<div class="portfolio-modal modal fade" id="terms" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>{{ 'Terms of Use'|trans }}</h2>
+                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                        <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                        <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {{ 'Close'|trans }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

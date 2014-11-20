@@ -1,3 +1,6 @@
+# Global
+Close: 'Cerrar'
+
 # Navbar
 Services: 'Servicios'
 About:    'Acerca de'
@@ -33,3 +36,7 @@ Please enter your email address: 'Por favor, introduzca su dirección de email'
 Please enter your phone number:  'Por favor, introduzca su número de teléfono'
 Please enter a message: 'Por favor, introduzca un mensaje'
 Send Message: 'Enviar Mensaje'
+
+# Footer
+Privacy Policy: 'Política de Privacidad'
+Terms of Use:   'Términos de Uso'
