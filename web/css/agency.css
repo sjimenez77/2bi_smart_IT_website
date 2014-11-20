@@ -1,6 +1,5 @@
 .videoPortada {
-  min-height: 860px;
-  max-height: 1080px;
+  min-height: 900px;
   background: url('../img/pattern-bg.png');
 }
 .map_canvas {

@@ -1,6 +1,6 @@
 # Navbar
 Services: 'Servicios'
-About us: 'Acerca de'
+About:    'Acerca de'
 Projects: 'Proyectos'
 Team:     'Equipo'
 Contact:  'Contacto'
@@ -12,6 +12,14 @@ Tell Me More: 'Cuéntame Más'
 
 # Services
 We provide the following services: 'Proporcionamos los siguientes servicios'
+
+# About
+About us: 'Acerca De Nosotros'
+We invite you to know our history: 'Le invitamos a conocer nuestra historia'
+
+# Team
+Our Amazing Team: 'Nuestro Equipo Increíble'
+Here we are! Do you want to know us? Please don't laugh at us, we are more handsome in the flesh: '¡Aquí estamos! ¿Quieres conocernos? Por favor, no se rían de nosotros, somos más guapos en persona'
 
 # Contact
 Contact Us:   'Contacte Con Nosotros'

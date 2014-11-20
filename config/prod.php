@@ -17,13 +17,13 @@ $app->register(new MonologServiceProvider(), array(
 $app['title'] = '2bi Smart IT';
 
 // Contact email
-$app['default_contact'] = 'comercial@2bi.es';
+$app['default_contact'] = 'sjimenez@2bi.es';
 
 // Swiftmailer config
 $app['swiftmailer.options'] = array(
-    'host'       => 'mail.agrokaam.com',
-    'username'   => 'noreply@agrokaam.com',
-    'password'   => '20kaam13agro+*]',
+    'host'       => 'mail.2bi.es',
+    'username'   => 'noreply@2bi.es',
+    'password'   => '',
     'encryption' => null,
     'auth_mode'  => 'login'
 );
