@@ -8,5 +8,5 @@ Redirect /img /web/img
 Redirect /css /web/css
 Redirect /js /web/js
 Redirect /fonts /web/fonts
-Redirect /font-awesome-4.1.0 /web/font-awesome-4.1.0
+Redirect /font-awesome-4.2.0 /web/font-awesome-4.2.0
 Redirect /video /web/video
