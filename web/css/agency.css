@@ -23,6 +23,12 @@
   text-transform: uppercase;
   font-weight: 700;
 }
+section#investors {
+  background-image: url('../img/investors-bg.jpg');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
