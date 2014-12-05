@@ -49,7 +49,16 @@ $(document).ready(function(){
     // Map
     initialize();
     showAddress('Paseo de las delicias 30, 28045, Madrid');
+    // Map buttons
+    $('a#madrid').click(function (event) {
+        showAddress('Paseo de las delicias 30, 28045, Madrid');
+    });
+    
+    $('a#clm').click(function (event) {
+        showAddress('Calle Marqués de Molins 13, 02001, Albacete');
+    });
 
+    
     // Orientation change event
     window.addEventListener("orientationchange", function() {
         location.reload();

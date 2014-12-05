@@ -26,7 +26,14 @@
 section#investors {
   background-image: url('../img/investors-bg.jpg');
   background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section#address {
+  padding: 4em 0;
+  background-image: url('../img/address-bg.jpg');
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 body {
