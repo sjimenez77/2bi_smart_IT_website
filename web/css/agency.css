@@ -3,7 +3,7 @@
   background: url('../img/pattern-bg.png');
 }
 .map_canvas {
-  height: 30em;
+  height: 40em;
   border-top: 0.4em solid #009ed8;
   border-bottom: 0.4em solid #009ed8;
 }
@@ -30,7 +30,6 @@ section#investors {
   background-repeat: no-repeat;
 }
 section#address {
-  padding: 4em 0;
   background-image: url('../img/address-bg.jpg');
   background-position: center;
   background-size: cover;
